@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #003D56;
+  /* --primary-color: #003D56; */
   --secondary-color: #FFF3DB;
   --tertiary-color: #5DFF5D;
   --title-font: "Franklin Gothic", monospace;
@@ -10,16 +10,29 @@ body {
   color: var(--secondary-color);
   background-color: var(--primary-color);
   font-size: 10px;
+  overflow-y: scroll;
+  overflow-x:hidden;
 }
 
 .container {
   display: flex;
+  height: 100%;
+  /* overflow-y: scroll;
+  overflow-x:hidden; */
   max-width: 1280px;
   padding: 30px 20px;
   margin: 0 auto;
 }
+
+.container img {
+  float: none;
+  height: 100%;
+  background-size: cover;
+  position: static;
+}
 .container .description_title {
   font-size: 15px;
+  color: black;
 }
 .gallery {
   display: flex;
