@@ -140,7 +140,10 @@ a:visited {
 
 .desc-container {
   /* padding: 160px; */
-  margin: 160px;
+  margin-top: 160px;
+  margin-bottom: 160px;
+  margin-left: 230px;
+  margin-right: 230px;
   /* width: calc(70% - 8px);
   height: calc(70% - 8px); */
   display: block;
@@ -157,7 +160,7 @@ a:visited {
 .description-text {
   /* text-align: center; */
   display: inline-block;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 table, td {

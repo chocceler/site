@@ -17,6 +17,8 @@ body {
 .container {
   display: flex;
   height: 100%;
+  /* overflow-y: scroll;
+  overflow-x:hidden; */
   max-width: 1280px;
   padding: 30px 20px;
   margin: 0 auto;
@@ -28,7 +30,6 @@ body {
   background-size: cover;
   position: static;
 }
-
 .container .description_title {
   font-size: 15px;
   color: black;
@@ -67,57 +68,42 @@ body {
   background-size: 100%;
 }
 .gallery__item:nth-child(2) {
-  background-image: url("../jadarimg/banksy.jpeg");
+  background-image: url("../images/img02.jpg");
   position: center;
   background-size: 100%;
 }
 .gallery__item:nth-child(3) {
-  background-image: url("../jadarimg/hotellogo.jpg");
+  background-image: url("../images/img03.jpg");
   position: center;
   background-size: 100%;
 }
 .gallery__item:nth-child(4) {
-  background-image: url("../jadarimg/handala.png");
+  background-image: url("../images/img04.jpg");
   position: center;
   background-size: 100%;
 }
 .gallery__item:nth-child(5) {
-  background-image: url("../jadarimg/hummus.jpg");
+  background-image: url("../images/img05.jpg");
   position: center;
   background-size: 100%;
 }
 .gallery__item:nth-child(6) {
-  background-image: url("../jadarimg/jafaorange.jpg");
+  background-image: url("../images/img06.jpg");
   position: center;
   background-size: 100%;
 }
 .gallery__item:nth-child(7) {
-  background-image: url("../jadarimg/leila.jpg");
+  background-image: url("../images/img01.jpg");
   position: center;
   background-size: 100%;
 }
 .gallery__item:nth-child(8) {
-  background-image: url("../jadarimg/parking.jpg");
+  background-image: url("../images/img02.jpg");
   position: center;
   background-size: 100%;
 }
 .gallery__item:nth-child(9) {
-  background-image: url("../jadarimg/station16.png");
-  position: center;
-  background-size: 100%;
-}
-.gallery__item:nth-child(10) {
-  background-image: url("../jadarimg/script1.png");
-  position: center;
-  background-size: 100%;
-}
-.gallery__item:nth-child(11) {
-  background-image: url("../jadarimg/script2.png");
-  position: center;
-  background-size: 100%;
-}
-.gallery__item:nth-child(12) {
-  background-image: url("../jadarimg/script3.png");
+  background-image: url("../images/img03.jpg");
   position: center;
   background-size: 100%;
 }
