@@ -1,0 +1,100 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+	//gallery CSS goes here
+
+&__item {
+  width: calc(50% - 12px);
+
+  // width: calc(33.5% - 12px);
+
+
+  background-color: var(--tertiary-color);
+  margin-bottom: 12px;
+  filter: grayscale(100%);
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+
+  @include tablet {
+    width: calc(50% - 6px);
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+
+  &:hover {
+    filter: grayscale(0);
+    background-size: 102%;
+  }
+
+
+  &:nth-child(1){
+    background-image: url("../jadarimg/girlandguard.jpg");
+    position: center;
+    background-size: 100%;
+  }
+
+  &:nth-child(2){
+    background-image: url("../images/img02.jpg");
+    position: center;
+    background-size: 100%;
+  }
+
+  &:nth-child(3){
+    background-image: url("../images/img03.jpg");
+    position: center;
+    background-size: 100%;
+  }
+
+  &:nth-child(4){
+    background-image: url("../images/img04.jpg");
+    position: center;
+    background-size: 100%;
+  }
+
+  &:nth-child(5){
+    background-image: url("../images/img05.jpg");
+    position: center;
+    background-size: 100%;
+  }
+
+  &:nth-child(6){
+    background-image: url("../images/img06.jpg");
+    position: center;
+    background-size: 100%;
+  }
+
+  &:nth-child(7){
+    background-image: url("../images/img01.jpg");
+    position: center;
+    background-size: 100%;
+  }
+
+  &:nth-child(8){
+    background-image: url("../images/img02.jpg");
+    position: center;
+    background-size: 100%;
+  }
+
+  &:nth-child(9){
+    background-image: url("../images/img03.jpg");
+    position: center;
+    background-size: 100%;
+  }
+
+
+div{
+  padding-bottom: 56.25%;
+  }
+
+.description_title span {
+  padding: 0;
+  align-self: flex-end;
+  margin: auto;
+}
+
+  }
+}

@@ -1,0 +1,296 @@
+body {
+  margin-left: 10px;
+  font-family: serif, Times New Roman;
+  font-size: 2.5em;
+  /* margin: 0;  */
+  height: 100%;
+  overflow: hidden;
+}
+
+.flex-parent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.page {
+	height: 100vh;
+  width: 100vw;
+	justify-content: space-between;
+	background-color: white;
+  /* think abt changing it from black to white with the day and night! */
+}
+
+.column {
+	flex-direction: column;
+}
+
+.column--1 {
+	width: calc(50% - 8px);
+  height: calc(80% - 8px);
+}
+
+.description {
+  padding: 50px;
+  width: calc(70% - 8px);
+  height: calc(70% - 8px);
+}
+
+.description-text {
+  font-size: .75em;
+}
+
+#proj2:hover #new {
+content: 'triumphant/broken';
+/* transition: .2s ease-in-out; */
+
+/* ref http://jsfiddle.net/fLMSd/14/ */
+}
+
+#proj2:hover #new:after{
+content: 'triumphant/broken';
+transition: .2s ease-in-out;
+
+/* ref http://jsfiddle.net/fLMSd/14/ */
+}
+
+.hover-link {
+  display: block;
+  /* transition: .2s ease-in-out; */
+}
+
+.hidden-text {
+  display: none;
+  transition: .2s ease-in-out;
+}
+
+.group:hover .hover-link {
+  display: none;
+  /* transition: .2s ease-in-out; */
+}
+
+.group:hover .hidden-text {
+  display: block;
+  transition: .2s ease-in-out;
+}
+
+#projlink {
+  color: #CFCFCF;
+}
+
+.column--2 {
+	width: calc(50% - 8px);
+  height: calc(80% - 8px);
+  justify-content: flex-end;
+  /* margin-right: 40px; */
+}
+
+.galeria {
+  padding: 50px;
+  width: calc(100% - 8px);
+  height: calc(70% - 8px);
+}
+
+.slideshow {
+  cursor: pointer;
+  position: relative;
+}
+
+.slideshow-image {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* .champ {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.lang {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transform: rotate(90deg);
+} */
+
+.slideshow-image--active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* EMOTION RANK IMGS */
+#ss1 img {
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  animation-name: fade;
+}
+
+#ss2 img {
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  animation-name: fade;
+}
+
+#ss3 img {
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  animation-name: fade;
+}
+
+#bar1 {
+  margin-left: calc(64% - 8px);
+  width: 300px;
+  height: 45px;
+  background-color: white;
+}
+
+#bar2 {
+  margin-left: calc(46% - 8px);
+  width: 450px;
+  height: 48px;
+  background-color: black;
+}
+
+#bar3 {
+  margin-left: calc(28% - 8px);
+  width: 600px;
+  height: 48px;
+  background-color: black;
+}
+
+#bar4 {
+  margin-left: calc(84% - 8px);
+  width: 134px;
+  height: 48px;
+  background-color: black;
+}
+
+#bar5 {
+  margin-left: calc(64% - 8px);
+  width: 301px;
+  height: 48px;
+  background-color: black;
+}
+
+#bar6 {
+  margin-left: calc(72% - 8px);
+  width: 234px;
+  height: 48px;
+  background-color: black;
+}
+
+#bar7 {
+  margin-left: calc(40% - 8px);
+  width: 520px;
+  height: 48px;
+  background-color: black;
+}
+
+#bar8 {
+  margin-left: calc(55% - 8px);
+  width: 500px;
+  height: 48px;
+  background-color: black;
+}
+
+#bar9 {
+  margin-left: calc(25% - 8px);
+  width: 640px;
+  height: 48px;
+  background-color: black;
+}
+
+.column--3 {
+  align-content: center;
+  align-items: center;
+  padding-left: 420px;
+  padding-top: 50px;
+	width: calc(100% - 8px);
+  height: calc(20% - 8px);
+  justify-content: space-between;
+}
+
+
+p {
+    text-align: justify;
+    margin-right: 5px;
+}
+
+#bio-overlay a {
+  z-index: 1000;
+  width: 100%;
+  height:100%;
+  background-color: rgba(0,0,255,.8);
+  position:fixed;
+  top:0;
+  left:0;
+  display: show;
+  cursor: pointer;
+}
+
+
+
+#bio-text {
+	position: fixed;
+	top:48px;
+	left: 48px;
+	color: white;
+	font-size: 52px;
+	line-height: normal;
+	margin-right: 48px;
+}
+
+
+a {
+    color: #222;
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+    transition: border-color .15s linear;
+    /* -moz-transition: border-color .15s linear; */
+    /* -o-transition: border-color .15s linear; */
+    -webkit-transition: border-color .15s linear;
+}
+
+#bio-text a {
+  color: white;
+   border-bottom: 4px solid transparent;
+ text-decoration: none;
+
+   transition: border-color .15s linear;
+  -moz-transition: border-color .15s linear;
+  -o-transition: border-color .15s linear;
+  -webkit-transition: border-color .15s linear;
+}
+
+#bio-text a:hover {
+ border-bottom:4px solid white;
+
+}
