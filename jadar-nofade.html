@@ -1,0 +1,191 @@
+<!-- http://jsfiddle.net/NLwtN/ REF FOR KEY FADE -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JADAR</title>
+    <link rel="stylesheet" href="jadarstyle.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  </head>
+  <body style="margin: 0; height: 100%; overflow: hidden">
+
+    <div class="container">
+    <div class="wall"><img src="jadarimg/jadar.jpg"></div>
+    <div class="all-graffiti">
+    <div class="graffiti-1" id="image1">الانتفاضة</div>
+    <div class="graffiti-2" id="image2"><img src="jadarimg/girlandguard.jpg"></div>
+    <div class="graffiti-3" id="image3"><img src="jadarimg/hotellogo.jpg"></div>
+    <div class="graffiti-4" id="image4"><img src="jadarimg/jafaorange.jpg"></div>
+    <div class="graffiti-5" id="image5"><img src="jadarimg/hummus.jpg"></div>
+    <div class="graffiti-6" id="image6"><img src="jadarimg/leila.jpg"></div>
+    <div class="graffiti-7" id="image7"><img src="jadarimg/parking.jpg"></div>
+    <div class="graffiti-8" id="image8"><img src="jadarimg/handala.png"></div>
+    <div class="graffiti-9" id="image9"><img src="jadarimg/station16.png"></div>
+    <div class="graffiti-10" id="image10"><img src="jadarimg/banksy.jpeg"></div>
+    <div class="graffiti-11" id="image11">الانتفاضة مستمرة</div>
+    <div class="graffiti-12" id="image12">المرأة تكون آمنة</div>
+  </div>
+
+    </div>
+
+    <center>
+    <div class="menu">
+      <div class="link"><a href="about.html">about</a> &nbsp;&nbsp; * &nbsp;&nbsp; <a href="symbols2.html">symbols</a></div>
+    </div>
+    </center>
+
+              <!-- maybe have images developing slowly to show the elaborate images done in the safe spaces. ADS -->
+              <!-- make an about page explaining the project -->
+              <!-- make a page explaining the symbology of the images -->
+              <!-- use SASS (greyscale filter, and opacity/ bnw as primary colors with css custom properties) -->
+              <!-- add modal navigation menu to toggle between pages -->
+    <!-- <script>
+
+    // USE KEYDOWN TO TOGGLE THE SPEED IN WHICH THE IMAGES FADE
+
+
+  $ ("document").ready(function(){
+
+setInterval( function() {
+  // console.log("working");
+$( ".graffiti-1" ).fadeToggle(8100).fadeToggle(800);
+}, 1000 );
+
+setInterval( function() {
+  // console.log("working");
+$( ".graffiti-2" ).fadeToggle(1500).fadeToggle(1800);
+}, 1000 );
+
+setInterval( function() {
+  // console.log("working");
+$( ".graffiti-3" ).fadeToggle(2500).fadeToggle(3800);
+}, 1000 );
+
+setInterval( function() {
+  // console.log("working");
+$( ".graffiti-4" ).fadeToggle(4500).fadeToggle(5800);
+}, 1000 );
+
+setInterval( function() {
+  // console.log("working");
+$( ".graffiti-5" ).fadeToggle(2000).fadeToggle(2800);
+}, 1000 );
+
+setInterval( function() {
+  // console.log("working");
+$( ".graffiti-6" ).fadeToggle(800).fadeToggle(5800);
+}, 1000 );
+
+setInterval( function() {
+  // console.log("working");
+$( ".graffiti-7" ).fadeToggle(8500).fadeToggle(5000);
+}, 1000 );
+
+setInterval( function() {
+  // console.log("working");
+$( ".graffiti-8" ).fadeToggle(6000).fadeToggle(2000);
+}, 1000 );
+
+setInterval( function() {
+  // console.log("working");
+$( ".graffiti-9" ).fadeToggle(1000).fadeToggle(3000);
+}, 1000 );
+
+setInterval( function() {
+  // console.log("working");
+$( ".graffiti-10" ).fadeToggle(1500).fadeToggle(4000);
+}, 1000 );
+
+setInterval( function() {
+  // console.log("working");
+$( ".graffiti-11" ).fadeToggle(3500).fadeToggle(500);
+}, 1000 );
+
+setInterval( function() {
+  // console.log("working");
+$( ".graffiti-12" ).fadeToggle(1200).fadeToggle(1200);
+}, 1000 );
+
+});
+
+    </script> -->
+
+    <script>
+    var op = 1;
+    var opp = .6;
+    var oppp = .4;
+    var opppp = .3;
+    var op1 = 10;
+    var step = .1;
+    var min = 0, max = 1;
+    var min1 = 10, max1 = 100;
+
+    var image1 = document.getElementById("image1");
+    image1.style.opacity = op;
+    var image2 = document.getElementById("image2");
+    image2.style.opacity = opp;
+    var image3 = document.getElementById("image3");
+    image3.style.opacity = op;
+    var image4 = document.getElementById("image4");
+    image4.style.opacity = opppp;
+    var image5 = document.getElementById("image5");
+    image5.style.opacity = op;
+    var image6 = document.getElementById("image6");
+    image6.style.opacity = opp;
+    var image7 = document.getElementById("image7");
+    image7.style.opacity = op;
+    var image8 = document.getElementById("image8");
+    image8.style.opacity = oppp;
+    var image9 = document.getElementById("image9");
+    image9.style.opacity = op;
+    var image10 = document.getElementById("image10");
+    image10.style.opacity = opppp;
+    var image11 = document.getElementById("image11");
+    image11.style.opacity = opp;
+    var image12 = document.getElementById("image12");
+    image12.style.opacity = op;
+//image.style.filter = alpha(opacity=op1);
+
+$(document).on('keydown', function(e) {
+  if(e.keyCode === 40) {
+    op-=step;
+    op1-=step;
+    op = Math.max(min, op);
+    op1 = Math.max(min, op1);
+    image1.style.opacity = Math.min(max, op);
+    image2.style.opacity = Math.min(max, op);
+    image3.style.opacity = Math.min(max, op);
+    image4.style.opacity = Math.min(max, op);
+    image5.style.opacity = Math.min(max, op);
+    image6.style.opacity = Math.min(max, op);
+    image7.style.opacity = Math.min(max, op);
+    image8.style.opacity = Math.min(max, op);
+    image9.style.opacity = Math.min(max, op);
+    image10.style.opacity = Math.min(max, op);
+    image11.style.opacity = Math.min(max, op);
+    image12.style.opacity = Math.min(max, op);
+  } else if(e.keyCode === 38) {
+    op+=step;
+    op1+=step;
+    image1.style.opacity = Math.min(max, op);
+    image2.style.opacity = Math.min(max, op);
+    image3.style.opacity = Math.min(max, op);
+    image4.style.opacity = Math.min(max, op);
+    image5.style.opacity = Math.min(max, op);
+    image6.style.opacity = Math.min(max, op);
+    image7.style.opacity = Math.min(max, op);
+    image8.style.opacity = Math.min(max, op);
+    image9.style.opacity = Math.min(max, op);
+    image10.style.opacity = Math.min(max, op);
+    image11.style.opacity = Math.min(max, op);
+    image12.style.opacity = Math.min(max, op);
+    op1 = Math.min(max, op1);
+  }
+});
+    </script>
+
+  </body>
+</html>
