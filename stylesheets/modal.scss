@@ -15,12 +15,12 @@
   }
 
   &__image {
-    position: absolute;
+    // position: absolute;
     width: 90%;
     width: calc(100% - 80px);
     max-width: 900px;
     height: auto;
-    transform: translate(-50%, -50%);
+    transform: translate(50%, 20%);
     top: 50%;
     left: 50%;
   }
