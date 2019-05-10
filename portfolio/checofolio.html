@@ -31,9 +31,9 @@
   <div id="proj3"><a href="./colorlang.html">color language</a></div>
   <div id="proj4"><a href="./zine.html">brooklyn zine</a></div>
   <div id="proj5"><a href="./chaos.html">gradual chaos</a></div>
-  <div id="proj6">citrova</div>
-  <div id="proj7">imbricated geometries</div>
-  <div id="proj8">illustrations</div>
+  <div id="proj6"><a href="./citrova.html">citrova</a></div>
+  <div id="proj7"><a href="./geometry.html">imbricated geometries</a></div>
+  <div id="proj8"><a href="./illustrations.html">illustrations</a></div>
 </div>
 
 <div class="column column--2">
@@ -52,38 +52,29 @@
 <div class="column column--3">
 
   <div id="mail" style="float: left; width: 200px; text-align: center;">
-    <a href="mailto:lil.checo9@gmail.com">
+    <a href="mailto:lilliana@checo.design">
     @
   </a>
   </div>
 
   <div class="bio fadein" style="float: left; width: 200px; text-align: center; display: block; border-bottom: 1px solid transparent;">
-  <a href="#bio">
     +
-  </a>
   </div>
   <div id="buffer" style="float: left; width: 200px; text-align: center;">-</div>
 
 </div>
 
-<a id="bio-overlay" style="display: hidden;" onclick="off()">
-  <a id="bio-text" style="display: hidden">
+<div class="bio-overlay" style="display: hidden;" onclick="off()">
+  <div id="bio-text" style="display: hidden">
     <!-- heya itya gal LILY
          FOR RESEARCH https://jsfiddle.net/govdqd8y/-->
-  </a>
-</a>
+  </div>
+</div>
 
 <script>
-$ ("document").ready(function(){
-
-            function on() {
-  document.getElementById("bio-overlay").style.display = "block";
-}
-
-function off() {
-  document.getElementById("bio-overlay").style.display = "none";
-}
-
+$(".bio").click(function(){
+  $(".bio-overlay").css('display','show');
+  $("#bio-text").css('display','show');;
 });
         </script>
 

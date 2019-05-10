@@ -25,7 +25,7 @@
         Picking up a colored gel pen, I start to draw objects of the given color. However, the sequence of elements start forming a narrative
         as they evoke feelings within me, oftentimes making the composition more abstract. Ultimately, the page is full of symbols on which
         I print the most convinient emotion to describe it in Blackletter type calligraphy. The final composition is then traced in Illustrator
-        to be easily reproducible on print. This is an ongoing project.
+        to be easily reproduced on print. <div id="ongoing">This is an ongoing project.</div>
       </div>
     </div>
 
@@ -59,7 +59,7 @@
     </div>
 
     <div id="mail" style="float: left; width: 200px; text-align: center;">
-      <a href="mailto:lil.checo9@gmail.com">
+      <a href="mailto:lilliana@checo.design">
       @
     </a>
     </div>
@@ -144,6 +144,10 @@
 //   slides[slideIndex-1].style.display = "block";
 //   dots[slideIndex-1].className += " active";
 // }
+setInterval( function() {
+  // console.log("working");
+$( "#ongoing" ).fadeToggle(800).delay(100).fadeToggle(800);
+}, 1000 );
 
     </script>
 

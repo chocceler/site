@@ -30,6 +30,11 @@ body {
   height: calc(80% - 8px);
 }
 
+.column--1-illust {
+	width: calc(20% - 8px);
+  height: calc(80% - 8px);
+}
+
 .description {
   padding: 50px;
   width: calc(70% - 8px);
@@ -85,10 +90,24 @@ transition: .2s ease-in-out;
   /* margin-right: 40px; */
 }
 
+.column--2-illust {
+	width: calc(80% - 8px);
+  height: calc(80% - 8px);
+  justify-content: flex-end;
+  /* margin-right: 40px; */
+}
+
 .galeria {
   padding: 50px;
   width: calc(100% - 8px);
   height: calc(70% - 8px);
+}
+
+.galeria-illust {
+  padding: 50px;
+  width: calc(60% - 8px);
+  height: calc(70% - 8px);
+  left: 0px;
 }
 
 .slideshow {
@@ -159,7 +178,25 @@ transition: .2s ease-in-out;
   animation-name: fade;
 }
 
+#ss2 video {
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  animation-name: fade;
+}
+
 #ss3 img {
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  animation-name: fade;
+}
+
+#ss4 img {
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  animation-name: fade;
+}
+
+#ss5 img {
   width: calc(100% - 8px);
   height: calc(100% - 8px);
   animation-name: fade;
@@ -214,6 +251,13 @@ transition: .2s ease-in-out;
   background-color: black;
 }
 
+#bar7-illust {
+  margin-left: calc(61% - 8px);
+  width: 520px;
+  height: 48px;
+  background-color: black;
+}
+
 #bar8 {
   margin-left: calc(55% - 8px);
   width: 500px;
@@ -236,6 +280,7 @@ transition: .2s ease-in-out;
 	width: calc(100% - 8px);
   height: calc(20% - 8px);
   justify-content: space-between;
+  z-index: 100;
 }
 
 
@@ -244,7 +289,7 @@ p {
     margin-right: 5px;
 }
 
-#bio-overlay a {
+.bio-overlay {
   z-index: 1000;
   width: 100%;
   height:100%;
@@ -252,13 +297,13 @@ p {
   position:fixed;
   top:0;
   left:0;
-  display: show;
+  display: hidden;
   cursor: pointer;
 }
 
 
 
-#bio-text {
+/* #bio-text {
 	position: fixed;
 	top:48px;
 	left: 48px;
@@ -266,7 +311,7 @@ p {
 	font-size: 52px;
 	line-height: normal;
 	margin-right: 48px;
-}
+} */
 
 
 a {
@@ -279,7 +324,7 @@ a {
     -webkit-transition: border-color .15s linear;
 }
 
-#bio-text a {
+#bio-text {
   color: white;
    border-bottom: 4px solid transparent;
  text-decoration: none;
@@ -288,9 +333,4 @@ a {
   -moz-transition: border-color .15s linear;
   -o-transition: border-color .15s linear;
   -webkit-transition: border-color .15s linear;
-}
-
-#bio-text a:hover {
- border-bottom:4px solid white;
-
 }

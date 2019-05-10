@@ -1,0 +1,130 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+	//gallery CSS goes here
+
+&__item {
+  width: calc(50% - 12px);
+
+  // width: calc(33.5% - 12px);
+
+
+  background-color: var(--tertiary-color);
+  margin-bottom: 12px;
+  filter: grayscale(100%);
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+
+  @include tablet {
+    width: calc(50% - 6px);
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+
+  &:hover {
+    filter: grayscale(0);
+    background-size: 102%;
+  }
+
+
+  &:nth-child(1) div{
+    background-image: url("../jadarimg/girlandguard.jpg");
+    position: center;
+    background-size: 100%;
+    background-color: var(--tertiary-color);
+  }
+
+  &:nth-child(2) div{
+    background-image: url("../jadarimg/banksy.jpeg");
+    position: center;
+    background-size: 100%;
+    background-color: var(--tertiary-color);
+  }
+
+  &:nth-child(3) div{
+    background-image: url("../jadarimg/hotellogo.jpg");
+    position: center;
+    background-size: 100%;
+    background-color: var(--tertiary-color);
+  }
+
+  &:nth-child(4) div{
+    background-image: url("../jadarimg/handala.png");
+    position: center;
+    background-size: 100%;
+    background-color: var(--tertiary-color);
+  }
+
+  &:nth-child(5) div{
+    background-image: url("../jadarimg/hummus.jpg");
+    position: center;
+    background-size: 100%;
+    background-color: var(--tertiary-color);
+  }
+
+  &:nth-child(6) div{
+    background-image: url("../jadarimg/jafaorange.jpg");
+    position: center;
+    background-size: 100%;
+    background-color: var(--tertiary-color);
+  }
+
+  &:nth-child(7) div{
+    background-image: url("../jadarimg/leila.jpg");
+    position: center;
+    background-size: 100%;
+    background-color: var(--tertiary-color);
+  }
+
+  &:nth-child(8) div{
+    background-image: url("../jadarimg/parking.jpg");
+    position: center;
+    background-size: 100%;
+    background-color: var(--tertiary-color);
+  }
+
+  &:nth-child(9) div{
+    background-image: url("../jadarimg/station16.png");
+    position: center;
+    background-size: 100%;
+    background-color: var(--tertiary-color);
+  }
+
+  &:nth-child(10) div{
+    background-image: url("../jadarimg/script1.png");
+    position: center;
+    background-size: 100%;
+    background-color: var(--tertiary-color);
+  }
+
+  &:nth-child(11) div{
+    background-image: url("../jadarimg/script2.png");
+    position: center;
+    background-size: 100%;
+    background-color: var(--tertiary-color);
+  }
+
+  &:nth-child(12) div{
+    background-image: url("../jadarimg/script3.png");
+    position: center;
+    background-size: 100%;
+    background-color: var(--tertiary-color);
+  }
+
+
+div{
+  padding-bottom: 56.25%;
+  }
+
+.description_title span {
+  padding: 0;
+  align-self: flex-end;
+  margin: auto;
+}
+
+  }
+}

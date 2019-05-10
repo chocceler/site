@@ -16,14 +16,12 @@
 
     <div class="column column--1">
     <div id="name" style="color: white">Lilliana Checo</div>
-    <div id="proj1">emotion rank</div>
+    <!-- <div id="proj1" style="color: white">emotion rank</div> -->
+    <div id="proj3">citrova</div>
 
     <div class="description">
       <div class="description-text" style="float: left;">
-        The media has a direct impact on our perception of the world around us and, sometimes, it can affect our mood be it good or bad news.
-        <a href="../emotions.html" id="projlink">emotion rank</a> is a system I created in addition to the 1-10 rating <a href="https://myanimelist.net">MAL</a> provides its users.
-        Sometimes when you watch a TV show or any content in particular, you might find yourself overwhelmed with emotion yet lacking an explanation for it.
-        With this list, I encourage myself to be more aware of how and why I feel a certain way when watching shows. emotion rank is both a tool of self-reflection and content filter.
+        ...
       </div>
     </div>
 
@@ -31,13 +29,20 @@
 
     <div class="column column--2">
     <div id="bar1"></div>
-    <div id="bar2"></div>
+    <!-- <div id="bar2"></div> -->
+    <div id="bar7"></div>
 
     <div class="galeria">
     <div class="slideshow fade">
-    <div class="slideshow-image slideshow-image--active" id="ss1"><img src="./images/emotionrank1.png"></div>
-    <div class="slideshow-image" id="ss2"><img src="./images/emotionrank2.png"></div>
-    <div class="slideshow-image" id="ss3"><img src="./images/emotionrank3.png"></div>
+    <div class="slideshow-image lang slideshow-image--active" id="ss1"><img src="./images/contained-citrova1.png"></div>
+    <div class="slideshow-image lang" id="ss2"><img src="./images/contained-citrova2.png"></div>
+    <div class="slideshow-image lang" id="ss3"><img src="./images/contained-citrova3.png"></div>
+    <div class="slideshow-image lang" id="ss4"><img src="./images/contained-citrova4.png"></div>
+    <!-- <div class="slideshow-image lang" id="ss2"><video autoplay="" loop="" muted="" src="./images/webpage-demo.mov"></div> -->
+
+        <!-- ***OTHERS ONGOING*** -->
+
+    <!-- <div class="slideshow-image" id="ss3"><img src="./images/..."></div> -->
     </div>
     </div>
 
@@ -85,7 +90,7 @@
      //      slideshowIndex++
      //   }
      // });
-
+// SHOW IN CASE YOU ADD MORE PICS
      $('#ss1').click(function() {
       $("#ss1").fadeOut(600);
       $("#ss2").fadeIn(600);
@@ -100,15 +105,22 @@
      });
      $('#ss3').click(function() {
       $("#ss3").fadeOut(600);
-      $("#ss1").fadeIn(600);
-      $('#ss1').addClass('slideshow-image--active');
+      $("#ss4").fadeIn(600);
+      $('#ss4').addClass('slideshow-image--active');
       $(this).removeClass('slideshow-image--active');
      });
-     $('.slideshow-image--active').onclick(function (e) {
-    setTimeout(function () {
-      $('#repair-drop').removeClass('visible').addClass('hidden');
-    }, 600);
-  });
+
+     $('#ss4').click(function() {
+         $("#ss4").fadeOut(600);
+         $("#ss1").fadeIn(600);
+         $('#ss1').addClass('slideshow-image--active');
+         $(this).removeClass('slideshow-image--active');
+        });
+  //    $('.slideshow-image--active').onclick(function (e) {
+  //   setTimeout(function () {
+  //     $('#repair-drop').removeClass('visible').addClass('hidden');
+  //   }, 600);
+  // });
   // ref http://jsfiddle.net/jzoe0q15/1/
     });
 //
