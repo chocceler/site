@@ -290,16 +290,29 @@ p {
 }
 
 .bio-overlay {
-  z-index: 1000;
+  z-index: -5;
+  opacity: 0;
   width: 100%;
   height:100%;
-  background-color: rgba(0,0,255,.8);
+  background-color: rgba(130,130,130,.8);
   position:fixed;
   top:0;
   left:0;
-  display: hidden;
-  cursor: pointer;
+  display: block;
+  transition: 1.2s;
 }
+
+.bio-overlay.active {
+    z-index: 1000;
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* .show-overl {
+    z-index: 1000;
+    opacity: 0.85;
+    cursor: pointer;
+} */
 
 
 
@@ -319,6 +332,7 @@ a {
     border-bottom: 1px solid transparent;
     text-decoration: none;
     transition: border-color .15s linear;
+    cursor: pointer;
     /* -moz-transition: border-color .15s linear; */
     /* -o-transition: border-color .15s linear; */
     -webkit-transition: border-color .15s linear;
@@ -326,8 +340,12 @@ a {
 
 #bio-text {
   color: white;
-   border-bottom: 4px solid transparent;
- text-decoration: none;
+  opacity: 20;
+  font-size: 39pt;
+  margin: 30px;
+  float: left;
+  border-bottom: 4px solid transparent;
+  text-decoration: none;
 
    transition: border-color .15s linear;
   -moz-transition: border-color .15s linear;

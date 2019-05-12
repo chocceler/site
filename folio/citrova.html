@@ -21,7 +21,11 @@
 
     <div class="description">
       <div class="description-text" style="float: left;">
-        ...
+        <i>(2018)</i><br>
+        Citrova is a juice brand for a healthier lifestyle. Each beverage is crafted with a base of a fruit with antioxidants
+        which is then mix with a citrus fruit and, to lower sugar levels, a dash of spice! Citrova provides you the best
+        combination of nutrients in its stylish and recyclable packaging.
+        Citrova is group project for Product and Packaging course.
       </div>
     </div>
 
@@ -38,6 +42,7 @@
     <div class="slideshow-image lang" id="ss2"><img src="./images/contained-citrova2.png"></div>
     <div class="slideshow-image lang" id="ss3"><img src="./images/contained-citrova3.png"></div>
     <div class="slideshow-image lang" id="ss4"><img src="./images/contained-citrova4.png"></div>
+    <div class="slideshow-image lang" id="ss5"><img src="./images/contained-citrova5.png"></div>
     <!-- <div class="slideshow-image lang" id="ss2"><video autoplay="" loop="" muted="" src="./images/webpage-demo.mov"></div> -->
 
         <!-- ***OTHERS ONGOING*** -->
@@ -52,7 +57,7 @@
     <div class="column column--3">
 
     <div id="home" style="float: left; width: 200px; text-align: center;">
-    <a href="checofolio.html">
+    <a href="checofolio.html" style="font-size: 35px">
     ◀
     </a>
     </div>
@@ -63,20 +68,37 @@
     </a>
     </div>
 
-    <div class="bio fadein" style="float: left; width: 200px; text-align: center; display: block; border-bottom: 1px solid transparent;">
-    <a href="#bio">
+    <div class="bio" alt title="bio" style="float: left; width: 200px; text-align: center; display: block; border-bottom: 1px solid transparent; cursor: pointer;">
       +
-    </a>
     </div>
-    <div id="buffer" style="float: left; width: 200px; text-align: center;">-</div>
+    <div id="buffer" alt title=":)" style="float: left; width: 200px; text-align: center; cursor: pointer;">-</div>
 
+  </div>
+
+  <div class="bio-overlay show-overl" style="display: block;">
+    <div id="bio-text" style="display: hidden">
+      lilliana is a young graphic designer and illustrator born in new york and raised in dominican republic.
+      now based in new york, she is pursuing her passion for graphic design and visual narrative.
+      <p>
+      lilliana is currently majoring in communication design and minoring in comics and graphic narrative at parsons school of design.
+      <p>
+      beyond academic projects, she is devotingly immersed in her communication design career with
+      personal projects, particularly a 3-year-old ongoing written story.
     </div>
+  </div>
 
-    <a id="bio-overlay" style="display: hidden;" onclick="off()">
-    <a id="bio-text" style="display: hidden">
-      <!-- heya itya gal LILY -->
-    </a>
-    </a>
+  <script>
+  $(".bio").click(function(){
+    $(".bio-overlay").addClass('active');
+    // $(".show-overl").addClass('active');
+    $("#bio-text").css('display','show');;
+  });
+
+  $(".bio-overlay").click(function(){
+    $(".bio-overlay").removeClass('active');
+    $("#bio-text").css('display','hidden');;
+  })
+          </script>
 
     <script>
 
@@ -112,9 +134,16 @@
 
      $('#ss4').click(function() {
          $("#ss4").fadeOut(600);
-         $("#ss1").fadeIn(600);
-         $('#ss1').addClass('slideshow-image--active');
+         $("#ss5").fadeIn(600);
+         $('#ss5').addClass('slideshow-image--active');
          $(this).removeClass('slideshow-image--active');
+        });
+
+      $('#ss5').click(function() {
+          $("#ss5").fadeOut(600);
+          $("#ss1").fadeIn(600);
+          $('#ss1').addClass('slideshow-image--active');
+          $(this).removeClass('slideshow-image--active');
         });
   //    $('.slideshow-image--active').onclick(function (e) {
   //   setTimeout(function () {

@@ -20,8 +20,9 @@
 
     <div class="description">
       <div class="description-text" style="float: left;">
+        <i>(2018)</i><br>
         The media has a direct impact on our perception of the world around us and, sometimes, it can affect our mood be it good or bad news.
-        <a href="../emotions.html" id="projlink">emotion rank</a> is a system I created in addition to the 1-10 rating <a href="https://myanimelist.net">MAL</a> provides its users.
+        <a href="https://lillianacc.github.io/site/emotions.html" id="projlink">emotion rank</a> is a system I created in addition to the 1-10 rating <a href="https://myanimelist.net">MAL</a> provides its users.
         Sometimes when you watch a TV show or any content in particular, you might find yourself overwhelmed with emotion yet lacking an explanation for it.
         With this list, I encourage myself to be more aware of how and why I feel a certain way when watching shows. emotion rank is both a tool of self-reflection and content filter.
       </div>
@@ -47,7 +48,7 @@
     <div class="column column--3">
 
     <div id="home" style="float: left; width: 200px; text-align: center;">
-    <a href="checofolio.html">
+    <a href="checofolio.html" style="font-size: 35px">
     ◀
     </a>
     </div>
@@ -58,20 +59,37 @@
     </a>
     </div>
 
-    <div class="bio fadein" style="float: left; width: 200px; text-align: center; display: block; border-bottom: 1px solid transparent;">
-    <a href="#bio">
+    <div class="bio" alt title="bio" style="float: left; width: 200px; text-align: center; display: block; border-bottom: 1px solid transparent; cursor: pointer;">
       +
-    </a>
     </div>
-    <div id="buffer" style="float: left; width: 200px; text-align: center;">-</div>
+    <div id="buffer" alt title=":)" style="float: left; width: 200px; text-align: center; cursor: pointer;">-</div>
 
+  </div>
+
+  <div class="bio-overlay show-overl" style="display: block;">
+    <div id="bio-text" style="display: hidden">
+      lilliana is a young graphic designer and illustrator born in new york and raised in dominican republic.
+      now based in new york, she is pursuing her passion for graphic design and visual narrative.
+      <p>
+      lilliana is currently majoring in communication design and minoring in comics and graphic narrative at parsons school of design.
+      <p>
+      beyond academic projects, she is devotingly immersed in her communication design career with
+      personal projects, particularly a 3-year-old ongoing written story.
     </div>
+  </div>
 
-    <a id="bio-overlay" style="display: hidden;" onclick="off()">
-    <a id="bio-text" style="display: hidden">
-      <!-- heya itya gal LILY -->
-    </a>
-    </a>
+  <script>
+  $(".bio").click(function(){
+    $(".bio-overlay").addClass('active');
+    // $(".show-overl").addClass('active');
+    $("#bio-text").css('display','show');;
+  });
+
+  $(".bio-overlay").click(function(){
+    $(".bio-overlay").removeClass('active');
+    $("#bio-text").css('display','hidden');;
+  })
+          </script>
 
     <script>
 

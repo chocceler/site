@@ -57,25 +57,36 @@
   </a>
   </div>
 
-  <div class="bio fadein" style="float: left; width: 200px; text-align: center; display: block; border-bottom: 1px solid transparent;">
+  <div class="bio" alt title="bio" style="float: left; width: 200px; text-align: center; display: block; border-bottom: 1px solid transparent; cursor: pointer;">
     +
   </div>
-  <div id="buffer" style="float: left; width: 200px; text-align: center;">-</div>
+  <div id="buffer" alt title=":)" style="float: left; width: 200px; text-align: center; cursor: pointer;">-</div>
 
 </div>
 
-<div class="bio-overlay" style="display: hidden;" onclick="off()">
+<div class="bio-overlay show-overl" style="display: block;">
   <div id="bio-text" style="display: hidden">
-    <!-- heya itya gal LILY
-         FOR RESEARCH https://jsfiddle.net/govdqd8y/-->
+    lilliana is a young graphic designer and illustrator born in new york and raised in dominican republic.
+    now based in new york, she is pursuing her passion for graphic design and visual narrative.
+    <p>
+    lilliana is currently majoring in communication design and minoring in comics and graphic narrative at parsons school of design.
+    <p>
+    beyond academic projects, she is devotingly immersed in her communication design career with
+    personal projects, particularly a 3-year-old ongoing written story.
   </div>
 </div>
 
 <script>
 $(".bio").click(function(){
-  $(".bio-overlay").css('display','show');
+  $(".bio-overlay").addClass('active');
+  // $(".show-overl").addClass('active');
   $("#bio-text").css('display','show');;
 });
+
+$(".bio-overlay").click(function(){
+  $(".bio-overlay").removeClass('active');
+  $("#bio-text").css('display','hidden');;
+})
         </script>
 
   </body>

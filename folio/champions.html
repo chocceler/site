@@ -24,6 +24,7 @@
 
     <div class="description">
       <div class="description-text" style="float: left;">
+        <i>(2018)</i><br>
         Champions: Triumphant yet Broken is a book that presents a mythological Greco-Roman iteration of four characters I have previously created:
         champion de lys, champion de venus, champion de mars, and champion d'elyses. The book presents these four champions and the gods they are related to,
         as well as tales of triumph and defeat of ancient champions. The ruling theme of this book is that our destiny is dictated by our nature and going
@@ -42,6 +43,8 @@
     <div class="slideshow fade">
     <div class="slideshow-image champ slideshow-image--active" id="ss1"><img src="./images/contained-TRIUMPHANTSIDE.png"></div>
     <div class="slideshow-image champ" id="ss2"><img src="./images/contained-BROKENSIDE.png"></div>
+    <div class="slideshow-image champ" id="ss3"><img src="./images/contained-brokenspread.png"></div>
+    <div class="slideshow-image champ" id="ss4"><img src="./images/contained-triumphantspread.png"></div>
 
         <!-- ***MAKE MORE MOCKUPS TO ADD ++ inner spreads*** -->
 
@@ -55,7 +58,7 @@
     <div class="column column--3">
 
     <div id="home" style="float: left; width: 200px; text-align: center;">
-    <a href="checofolio.html">
+    <a href="checofolio.html" style="font-size: 35px">
     ◀
     </a>
     </div>
@@ -66,20 +69,37 @@
     </a>
     </div>
 
-    <div class="bio fadein" style="float: left; width: 200px; text-align: center; display: block; border-bottom: 1px solid transparent;">
-    <a href="#bio">
+    <div class="bio" alt title="bio" style="float: left; width: 200px; text-align: center; display: block; border-bottom: 1px solid transparent; cursor: pointer;">
       +
-    </a>
     </div>
-    <div id="buffer" style="float: left; width: 200px; text-align: center;">-</div>
+    <div id="buffer" alt title=":)" style="float: left; width: 200px; text-align: center; cursor: pointer;">-</div>
 
+  </div>
+
+  <div class="bio-overlay show-overl" style="display: block;">
+    <div id="bio-text" style="display: hidden">
+      lilliana is a young graphic designer and illustrator born in new york and raised in dominican republic.
+      now based in new york, she is pursuing her passion for graphic design and visual narrative.
+      <p>
+      lilliana is currently majoring in communication design and minoring in comics and graphic narrative at parsons school of design.
+      <p>
+      beyond academic projects, she is devotingly immersed in her communication design career with
+      personal projects, particularly a 3-year-old ongoing written story.
     </div>
+  </div>
 
-    <a id="bio-overlay" style="display: hidden;" onclick="off()">
-    <a id="bio-text" style="display: hidden">
-      <!-- heya itya gal LILY -->
-    </a>
-    </a>
+  <script>
+  $(".bio").click(function(){
+    $(".bio-overlay").addClass('active');
+    // $(".show-overl").addClass('active');
+    $("#bio-text").css('display','show');;
+  });
+
+  $(".bio-overlay").click(function(){
+    $(".bio-overlay").removeClass('active');
+    $("#bio-text").css('display','hidden');;
+  })
+          </script>
 
     <script>
 
@@ -102,16 +122,22 @@
      });
      $('#ss2').click(function() {
       $("#ss2").fadeOut(600);
+      $("#ss3").fadeIn(600);
+      $('#ss3').addClass('slideshow-image--active');
+      $(this).removeClass('slideshow-image--active');
+     });
+     $('#ss3').click(function() {
+      $("#ss3").fadeOut(600);
+      $("#ss4").fadeIn(600);
+      $('#ss4').addClass('slideshow-image--active');
+      $(this).removeClass('slideshow-image--active');
+     });
+     $('#ss4').click(function() {
+      $("#ss4").fadeOut(600);
       $("#ss1").fadeIn(600);
       $('#ss1').addClass('slideshow-image--active');
       $(this).removeClass('slideshow-image--active');
      });
-  //    $('#ss3').click(function() {
-  //     $("#ss3").fadeOut(600);
-  //     $("#ss1").fadeIn(600);
-  //     $('#ss1').addClass('slideshow-image--active');
-  //     $(this).removeClass('slideshow-image--active');
-  //    });
   //    $('.slideshow-image--active').onclick(function (e) {
   //   setTimeout(function () {
   //     $('#repair-drop').removeClass('visible').addClass('hidden');
