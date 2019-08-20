@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="heya itya gal LILY">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Lilliana Checo</title>
+    <link rel="stylesheet" href="foliostyle.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  </head>
+  <body data-gr-c-s-loaded="true">
+<div class="page flex-parent">
+
+<div class="column column--1">
+  <div id="name">Lilliana Checo</div>
+  <div id="proj1">
+    <a href="./emotionrank.html">
+      emotion rank
+    </a>
+    </div>
+  <div id="proj2 new" class="group">
+    <a href="./champions.html">
+    <span class="hover-link">champions:</span>
+    <span class="hidden-text">triumphant yet broken</span>
+    </a>
+  </div>
+  <div id="proj3"><a href="./colorlang.html">color language</a></div>
+  <div id="proj4"><a href="./zine.html">brooklyn zine</a></div>
+  <div id="proj5"><a href="./chaos.html">gradual chaos</a></div>
+  <div id="proj6"><a href="./citrova.html">citrova</a></div>
+  <div id="proj7"><a href="./geometry.html">imbricated geometries</a></div>
+  <div id="proj8"><a href="./calendar.html">aquarium timer</a></div>
+  <div id="proj9"><a href="./illustrations.html">illustrations</a></div>
+</div>
+
+<div class="column column--2">
+  <div id="bar1"></div>
+  <div id="bar2"></div>
+  <div id="bar3"></div>
+  <div id="bar4"></div>
+  <div id="bar5"></div>
+  <div id="bar6"></div>
+  <div id="bar7"></div>
+  <div id="bar8"></div>
+  <div id="bar9"></div>
+  <div id="bar10"></div>
+  <!-- Note: make bars animate when you hover over the menu item! -->
+
+</div>
+
+<div class="column column--3">
+
+  <div id="mail" style="float: left; width: 200px; text-align: center;">
+    <a href="mailto:lilliana@checo.design">
+    @
+  </a>
+  </div>
+
+  <div class="bio" alt title="bio" style="float: left; width: 200px; text-align: center; display: block; border-bottom: 1px solid transparent; cursor: pointer;">
+    +
+  </div>
+  <div id="buffer" alt title=":)" style="float: left; width: 200px; text-align: center; cursor: pointer;">-</div>
+
+</div>
+
+<div class="bio-overlay show-overl" style="display: block;">
+  <div id="bio-text" style="display: hidden">
+    lilliana is a young graphic designer and illustrator born in new york and raised in dominican republic.
+    now based in new york, she is pursuing her passion for graphic design and visual narrative.
+    <p>
+    lilliana is currently majoring in communication design and minoring in comics and graphic narrative at parsons school of design.
+    <p>
+    beyond academic projects, she is devotingly immersed in her communication design career with
+    personal projects, particularly a 3-year-old ongoing written story.
+  </div>
+</div>
+
+<script>
+$(".bio").click(function(){
+  $(".bio-overlay").addClass('active');
+  // $(".show-overl").addClass('active');
+  $("#bio-text").css('display','show');;
+});
+
+$(".bio-overlay").click(function(){
+  $(".bio-overlay").removeClass('active');
+  $("#bio-text").css('display','hidden');;
+})
+        </script>
+
+  </body>
+</html>
