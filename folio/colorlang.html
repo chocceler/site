@@ -110,18 +110,18 @@
      //   }
      // });
 
-     $('#ss1').click(function() {
-      $("#ss1").fadeOut(600);
-      $("#ss2").fadeIn(600);
-      $('#ss2').addClass('slideshow-image--active');
-      $(this).removeClass('slideshow-image--active');
-     });
-     $('#ss2').click(function() {
-      $("#ss2").fadeOut(600);
-      $("#ss1").fadeIn(600);
-      $('#ss1').addClass('slideshow-image--active');
-      $(this).removeClass('slideshow-image--active');
-     });
+     // $('#ss1').click(function() {
+     //  $("#ss1").fadeOut(600);
+     //  $("#ss2").fadeIn(600);
+     //  $('#ss2').addClass('slideshow-image--active');
+     //  $(this).removeClass('slideshow-image--active');
+     // });
+     // $('#ss2').click(function() {
+     //  $("#ss2").fadeOut(600);
+     //  $("#ss1").fadeIn(600);
+     //  $('#ss1').addClass('slideshow-image--active');
+     //  $(this).removeClass('slideshow-image--active');
+     // });
   //    $('#ss3').click(function() {
   //     $("#ss3").fadeOut(600);
   //     $("#ss1").fadeIn(600);
@@ -133,6 +133,14 @@
   //     $('#repair-drop').removeClass('visible').addClass('hidden');
   //   }, 600);
   // });
+  setInterval(function() {
+    $('.slideshow > div:first')
+      .fadeOut(1000)
+      .next().addClass('slideshow-image--active')
+      .fadeIn(1000)
+      .end()
+      .appendTo('.slideshow');
+  },  3500);
   // ref http://jsfiddle.net/jzoe0q15/1/
     });
 //

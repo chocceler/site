@@ -25,7 +25,7 @@
         Citrova is a juice brand for a healthier lifestyle. Each beverage is crafted with a base of a fruit with antioxidants
         which is then mix with a citrus fruit and, to lower sugar levels, a dash of spice! Citrova provides you the best
         combination of nutrients in its stylish and recyclable packaging.
-        Citrova is group project for Product and Packaging course.
+        Citrova is a group project for Product and Packaging course.
       </div>
     </div>
 
@@ -113,43 +113,51 @@
      //   }
      // });
 // SHOW IN CASE YOU ADD MORE PICS
-     $('#ss1').click(function() {
-      $("#ss1").fadeOut(600);
-      $("#ss2").fadeIn(600);
-      $('#ss2').addClass('slideshow-image--active');
-      $(this).removeClass('slideshow-image--active');
-     });
-     $('#ss2').click(function() {
-      $("#ss2").fadeOut(600);
-      $("#ss3").fadeIn(600);
-      $('#ss3').addClass('slideshow-image--active');
-      $(this).removeClass('slideshow-image--active');
-     });
-     $('#ss3').click(function() {
-      $("#ss3").fadeOut(600);
-      $("#ss4").fadeIn(600);
-      $('#ss4').addClass('slideshow-image--active');
-      $(this).removeClass('slideshow-image--active');
-     });
-
-     $('#ss4').click(function() {
-         $("#ss4").fadeOut(600);
-         $("#ss5").fadeIn(600);
-         $('#ss5').addClass('slideshow-image--active');
-         $(this).removeClass('slideshow-image--active');
-        });
-
-      $('#ss5').click(function() {
-          $("#ss5").fadeOut(600);
-          $("#ss1").fadeIn(600);
-          $('#ss1').addClass('slideshow-image--active');
-          $(this).removeClass('slideshow-image--active');
-        });
+     // $('#ss1').click(function() {
+     //  $("#ss1").fadeOut(600);
+     //  $("#ss2").fadeIn(600);
+     //  $('#ss2').addClass('slideshow-image--active');
+     //  $(this).removeClass('slideshow-image--active');
+     // });
+     // $('#ss2').click(function() {
+     //  $("#ss2").fadeOut(600);
+     //  $("#ss3").fadeIn(600);
+     //  $('#ss3').addClass('slideshow-image--active');
+     //  $(this).removeClass('slideshow-image--active');
+     // });
+     // $('#ss3').click(function() {
+     //  $("#ss3").fadeOut(600);
+     //  $("#ss4").fadeIn(600);
+     //  $('#ss4').addClass('slideshow-image--active');
+     //  $(this).removeClass('slideshow-image--active');
+     // });
+     //
+     // $('#ss4').click(function() {
+     //     $("#ss4").fadeOut(600);
+     //     $("#ss5").fadeIn(600);
+     //     $('#ss5').addClass('slideshow-image--active');
+     //     $(this).removeClass('slideshow-image--active');
+     //    });
+     //
+     //  $('#ss5').click(function() {
+     //      $("#ss5").fadeOut(600);
+     //      $("#ss1").fadeIn(600);
+     //      $('#ss1').addClass('slideshow-image--active');
+     //      $(this).removeClass('slideshow-image--active');
+     //    });
   //    $('.slideshow-image--active').onclick(function (e) {
   //   setTimeout(function () {
   //     $('#repair-drop').removeClass('visible').addClass('hidden');
   //   }, 600);
   // });
+  setInterval(function() {
+    $('.slideshow > div:first')
+      .fadeOut(1000)
+      .next().addClass('slideshow-image--active')
+      .fadeIn(1000)
+      .end()
+      .appendTo('.slideshow');
+  },  3500);
   // ref http://jsfiddle.net/jzoe0q15/1/
     });
 //
