@@ -10,6 +10,8 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 
   </head>
   <body data-gr-c-s-loaded="true">
@@ -17,45 +19,65 @@
 
 <div class="column column--1">
   <div id="name">Lilliana Checo</div>
-  <div id="proj1">
-    <a href="./emotionrank.html">
-      emotion rank
-    </a>
-    </div>
-  <div id="proj2 new" class="group">
+  <div id="proj1"><a href="./emotionrank.html">emotion rank</a></div>
+  <div id="proj2"><a href="./champions.html">champions</a></div>
+  <!-- <div id="proj2 new" class="group">
     <a href="./champions.html">
     <span class="hover-link">champions:</span>
     <span class="hidden-text">triumphant yet broken</span>
     </a>
-  </div>
-  <div id="proj3"><a href="./colorlang.html">color language</a></div>
-  <div id="proj4"><a href="./zine.html">brooklyn zine</a></div>
-  <div id="proj5"><a href="./chaos.html">gradual chaos</a></div>
+  </div> -->
+  <div id="proj3"><a href="./space.html">space</a></div>
+  <div id="proj4"><a href="./mark.html">mark</a></div>
+  <div id="proj5"><a href="./photo.html">photo portfolio</a></div>
   <div id="proj6"><a href="./citrova.html">citrova</a></div>
   <div id="proj7"><a href="./geometry.html">imbricated geometries</a></div>
   <div id="proj8"><a href="./calendar.html">aquarium timer</a></div>
-  <div id="proj9"><a href="./illustrations.html">illustrations</a></div>
+  <div id="proj9"><a href="./leftovers.html">leftovers</a></div>
+  <!-- <div id="proj9 new" class="group">
+    <a href="./leftovers.html">
+    <span class="hover-link">leftovers:</span>
+    <span class="hidden-text">trailer</span>
+    </a>
+  </div> -->
+  <div id="proj10"><a href="./colorlang.html">color language</a></div>
+  <!-- <div id="proj11"><a href="./zine.html">brooklyn zine</a></div> -->
+  <div id="proj12"><a href="./chaos.html">gradual chaos</a></div>
+  <div id="proj13"><a href="./motionqu.html">fleeting</a></div>
+  <!-- <div id="proj13 new" class="group">
+    <a href="./motionqu.html">
+    <span class="hover-link">fleeting:</span>
+    <span class="hidden-text">motion quote</span>
+    </a>
+  </div> -->
+  <div id="proj14"><a href="./illustrations.html">illustrations</a></div>
 </div>
 
 <div class="column column--2">
   <div id="bar1"></div>
-  <div id="bar2"></div>
-  <div id="bar3"></div>
-  <div id="bar4"></div>
-  <div id="bar5"></div>
-  <div id="bar6"></div>
-  <div id="bar7"></div>
-  <div id="bar8"></div>
-  <div id="bar9"></div>
-  <div id="bar10"></div>
+  <div id="bar2">website</div>
+  <div id="bar3">book</div>
+  <div id="bar4">book</div>
+  <div id="bar5">book</div>
+  <div id="bar6">website</div>
+  <div id="bar7">branding</div>
+  <div id="bar8">website</div>
+  <div id="bar9">website</div>
+  <div id="bar10">video</div>
+  <div id="bar11">drawing</div>
+  <!-- <div id="bar12">book</div> -->
+  <div id="bar13">website</div>
+  <div id="bar14">video</div>
+  <div id="bar15">drawing</div>
   <!-- Note: make bars animate when you hover over the menu item! -->
+  <!-- ref: https://jsfiddle.net/ThinkingStiff/dWHzF/ -->
 
 </div>
 
 <div class="column column--3">
 
   <div id="mail" style="float: left; width: 200px; text-align: center;">
-    <a href="mailto:lilliana@checo.design">
+    <a href="mailto:lilliana@lilycc.com">
     @
   </a>
   </div>
@@ -78,6 +100,7 @@
     personal projects, particularly a 3-year-old ongoing written story.
   </div>
 </div>
+</div>
 
 <script>
 $(".bio").click(function(){
@@ -89,7 +112,106 @@ $(".bio").click(function(){
 $(".bio-overlay").click(function(){
   $(".bio-overlay").removeClass('active');
   $("#bio-text").css('display','hidden');;
-})
+});
+
+$("#proj1").hover(function(){
+   $("#bar2").css({'margin-left': '10%', 'width': '950px', 'color': 'white', 'padding-left': '40px', 'transition': '.5s ease-in-out'}, "slow");
+ },
+ function(){
+   $("#bar2").css({'display': 'block', 'right': '0px', 'margin-left': '25%', 'width': '640px', 'height': '48px', 'color': 'black', 'background-color': 'black', 'transition': '.5s ease-in-out'});
+ });
+
+ $("#proj2").hover(function(){
+    $("#bar3").css({'margin-left': '10%', 'width': '950px', 'color': 'white', 'padding-left': '40px', 'transition': '.5s ease-in-out'}, "slow");
+  },
+  function(){
+    $("#bar3").css({'display': 'block', 'right': '0px', 'margin-left': '25%', 'width': '640px', 'height': '48px', 'color': 'black', 'background-color': 'black', 'transition': '.5s ease-in-out'});
+  });
+
+  $("#proj3").hover(function(){
+     $("#bar4").css({'margin-left': '10%', 'width': '950px', 'color': 'white', 'padding-left': '40px', 'transition': '.5s ease-in-out'}, "slow");
+   },
+   function(){
+     $("#bar4").css({'display': 'block', 'right': '0px', 'margin-left': '25%', 'width': '640px', 'height': '48px', 'color': 'black', 'background-color': 'black', 'transition': '.5s ease-in-out'});
+   });
+
+   $("#proj4").hover(function(){
+      $("#bar5").css({'margin-left': '10%', 'width': '950px', 'color': 'white', 'padding-left': '40px', 'transition': '.5s ease-in-out'}, "slow");
+    },
+    function(){
+      $("#bar5").css({'display': 'block', 'right': '0px', 'margin-left': '25%', 'width': '640px', 'height': '48px', 'color': 'black', 'background-color': 'black', 'transition': '.5s ease-in-out'});
+    });
+
+    $("#proj5").hover(function(){
+       $("#bar6").css({'margin-left': '10%', 'width': '950px', 'color': 'white', 'padding-left': '40px', 'transition': '.5s ease-in-out'}, "slow");
+     },
+     function(){
+       $("#bar6").css({'display': 'block', 'right': '0px', 'margin-left': '25%', 'width': '640px', 'height': '48px', 'color': 'black', 'background-color': 'black', 'transition': '.5s ease-in-out'});
+     });
+
+     $("#proj6").hover(function(){
+        $("#bar7").css({'margin-left': '10%', 'width': '950px', 'color': 'white', 'padding-left': '40px', 'transition': '.5s ease-in-out'}, "slow");
+      },
+      function(){
+        $("#bar7").css({'display': 'block', 'right': '0px', 'margin-left': '25%', 'width': '640px', 'height': '48px', 'color': 'black', 'background-color': 'black', 'transition': '.5s ease-in-out'});
+      });
+
+      $("#proj7").hover(function(){
+         $("#bar8").css({'margin-left': '10%', 'width': '950px', 'color': 'white', 'padding-left': '40px', 'transition': '.5s ease-in-out'}, "slow");
+       },
+       function(){
+         $("#bar8").css({'display': 'block', 'right': '0px', 'margin-left': '25%', 'width': '640px', 'height': '48px', 'color': 'black', 'background-color': 'black', 'transition': '.5s ease-in-out'});
+       });
+
+       $("#proj8").hover(function(){
+          $("#bar9").css({'margin-left': '10%', 'width': '950px', 'color': 'white', 'padding-left': '40px', 'transition': '.5s ease-in-out'}, "slow");
+        },
+        function(){
+          $("#bar9").css({'display': 'block', 'right': '0px', 'margin-left': '25%', 'width': '640px', 'height': '48px', 'color': 'black', 'background-color': 'black', 'transition': '.5s ease-in-out'});
+        });
+
+        $("#proj9").hover(function(){
+           $("#bar10").css({'margin-left': '10%', 'width': '950px', 'color': 'white', 'padding-left': '40px', 'transition': '.5s ease-in-out'}, "slow");
+         },
+         function(){
+           $("#bar10").css({'display': 'block', 'right': '0px', 'margin-left': '25%', 'width': '640px', 'height': '48px', 'color': 'black', 'background-color': 'black', 'transition': '.5s ease-in-out'});
+         });
+
+         $("#proj10").hover(function(){
+            $("#bar11").css({'margin-left': '10%', 'width': '950px', 'color': 'white', 'padding-left': '40px', 'transition': '.5s ease-in-out'}, "slow");
+          },
+          function(){
+            $("#bar11").css({'display': 'block', 'right': '0px', 'margin-left': '25%', 'width': '640px', 'height': '48px', 'color': 'black', 'background-color': 'black', 'transition': '.5s ease-in-out'});
+          });
+
+          $("#proj11").hover(function(){
+             $("#bar12").css({'margin-left': '10%', 'width': '950px', 'color': 'white', 'padding-left': '40px', 'transition': '.5s ease-in-out'}, "slow");
+           },
+           function(){
+             $("#bar12").css({'display': 'block', 'right': '0px', 'margin-left': '25%', 'width': '640px', 'height': '48px', 'color': 'black', 'background-color': 'black', 'transition': '.5s ease-in-out'});
+           });
+
+           $("#proj12").hover(function(){
+              $("#bar13").css({'margin-left': '10%', 'width': '950px', 'color': 'white', 'padding-left': '40px', 'transition': '.5s ease-in-out'}, "slow");
+            },
+            function(){
+              $("#bar13").css({'display': 'block', 'right': '0px', 'margin-left': '25%', 'width': '640px', 'height': '48px', 'color': 'black', 'background-color': 'black', 'transition': '.5s ease-in-out'});
+            });
+
+            $("#proj13").hover(function(){
+               $("#bar14").css({'margin-left': '10%', 'width': '950px', 'color': 'white', 'padding-left': '40px', 'transition': '.5s ease-in-out'}, "slow");
+             },
+             function(){
+               $("#bar14").css({'display': 'block', 'right': '0px', 'margin-left': '25%', 'width': '640px', 'height': '48px', 'color': 'black', 'background-color': 'black', 'transition': '.5s ease-in-out'});
+             });
+
+             $("#proj14").hover(function(){
+                $("#bar15").css({'margin-left': '10%', 'width': '950px', 'color': 'white', 'padding-left': '40px', 'transition': '.5s ease-in-out'}, "slow");
+              },
+              function(){
+                $("#bar15").css({'display': 'block', 'right': '0px', 'margin-left': '25%', 'width': '640px', 'height': '48px', 'color': 'black', 'background-color': 'black', 'transition': '.5s ease-in-out'});
+              });
+
         </script>
 
   </body>

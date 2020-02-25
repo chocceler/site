@@ -24,7 +24,7 @@
 
     <div class="description">
       <div class="description-text" style="float: left;">
-        <i>(2018)</i><br>
+        <i>(2018)</i><p>
         Champions: Triumphant yet Broken is a book that presents a mythological Greco-Roman iteration of four characters I have previously created:
         champion de lys, champion de venus, champion de mars, and champion d'elyses. The book presents these four champions and the gods they are related to,
         as well as tales of triumph and defeat of ancient champions. The ruling theme of this book is that our destiny is dictated by our nature and going
@@ -64,7 +64,7 @@
     </div>
 
     <div id="mail" style="float: left; width: 200px; text-align: center;">
-      <a href="mailto:lilliana@checo.design">
+      <a href="mailto:lilliana@lilycc.com">
       @
     </a>
     </div>
@@ -107,51 +107,51 @@
      //  var slideshowIndex= 0;
      //  showSlides(slideshowIndex);
      //
-     //  $(".slideshow" ).click(function(){
-     //    if(slideshowIndex < slideshow.length){
-     //      $(".slideshow").append("<div class=''>" + slideshow[slideshowIndex] + "</div>");
-     //      slideshowIndex++
-     //   }
-     // });
+      $(".slideshow" ).click(function(){
+        if(slideshowIndex < slideshow.length){
+          $(".slideshow").append("<div class=''>" + slideshow[slideshowIndex] + "</div>");
+          slideshowIndex++
+       }
+     });
 
-     // $('#ss1').click(function() {
-     //  $("#ss1").fadeOut(600);
-     //  $("#ss2").fadeIn(600);
-     //  $('#ss2').addClass('slideshow-image--active');
-     //  $(this).removeClass('slideshow-image--active');
-     // });
-     // $('#ss2').click(function() {
-     //  $("#ss2").fadeOut(600);
-     //  $("#ss3").fadeIn(600);
-     //  $('#ss3').addClass('slideshow-image--active');
-     //  $(this).removeClass('slideshow-image--active');
-     // });
-     // $('#ss3').click(function() {
-     //  $("#ss3").fadeOut(600);
-     //  $("#ss4").fadeIn(600);
-     //  $('#ss4').addClass('slideshow-image--active');
-     //  $(this).removeClass('slideshow-image--active');
-     // });
-     // $('#ss4').click(function() {
-     //  $("#ss4").fadeOut(600);
-     //  $("#ss1").fadeIn(600);
-     //  $('#ss1').addClass('slideshow-image--active');
-     //  $(this).removeClass('slideshow-image--active');
-     // });
-  //    $('.slideshow-image--active').onclick(function (e) {
-  //   setTimeout(function () {
-  //     $('#repair-drop').removeClass('visible').addClass('hidden');
-  //   }, 600);
-  // });
+     $('#ss1').click(function() {
+      $("#ss1").fadeOut(600);
+      $("#ss2").fadeIn(600);
+      $('#ss2').addClass('slideshow-image--active');
+      $(this).removeClass('slideshow-image--active');
+     });
+     $('#ss2').click(function() {
+      $("#ss2").fadeOut(600);
+      $("#ss3").fadeIn(600);
+      $('#ss3').addClass('slideshow-image--active');
+      $(this).removeClass('slideshow-image--active');
+     });
+     $('#ss3').click(function() {
+      $("#ss3").fadeOut(600);
+      $("#ss4").fadeIn(600);
+      $('#ss4').addClass('slideshow-image--active');
+      $(this).removeClass('slideshow-image--active');
+     });
+     $('#ss4').click(function() {
+      $("#ss4").fadeOut(600);
+      $("#ss1").fadeIn(600);
+      $('#ss1').addClass('slideshow-image--active');
+      $(this).removeClass('slideshow-image--active');
+     });
+     $('.slideshow-image--active').onclick(function (e) {
+    setTimeout(function () {
+      $('#repair-drop').removeClass('visible').addClass('hidden');
+    }, 600);
+  });
 
-  setInterval(function() {
-    $('.slideshow > div:first')
-      .fadeOut(1000)
-      .next().addClass('slideshow-image--active')
-      .fadeIn(1000)
-      .end()
-      .appendTo('.slideshow');
-  },  3500);
+  // setInterval(function() {
+  //   $('.slideshow > div:first')
+  //     .fadeOut(1000)
+  //     .next().addClass('slideshow-image--active')
+  //     .fadeIn(1000)
+  //     .end()
+  //     .appendTo('.slideshow');
+  // },  3500);
   // ref http://jsfiddle.net/jzoe0q15/1/
     });
 //

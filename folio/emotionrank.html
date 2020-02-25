@@ -20,7 +20,7 @@
 
     <div class="description">
       <div class="description-text" style="float: left;">
-        <i>(2018)</i><br>
+        <i>(2018)</i><p>
         The media has a direct impact on our perception of the world around us and, sometimes, it can affect our mood be it good or bad news.
         <a href="https://lillianacc.github.io/site/emotions.html" id="projlink">emotion rank</a> is a system I created in addition to the 1-10 rating <a href="https://myanimelist.net">MAL</a> provides its users.
         Sometimes when you watch a TV show or any content in particular, you might find yourself overwhelmed with emotion yet lacking an explanation for it.
@@ -54,7 +54,7 @@
     </div>
 
     <div id="mail" style="float: left; width: 200px; text-align: center;">
-      <a href="mailto:lilliana@checo.design">
+      <a href="mailto:lilliana@lilycc.com">
       @
     </a>
     </div>
@@ -94,50 +94,51 @@
     <script>
 
     $("document").ready(function(){
-     //  var slideshowIndex= 0;
-     //  showSlides(slideshowIndex);
-     //
-     //  $(".slideshow" ).click(function(){
-     //    if(slideshowIndex < slideshow.length){
-     //      $(".slideshow").append("<div class=''>" + slideshow[slideshowIndex] + "</div>");
-     //      slideshowIndex++
-     //   }
-     // });
+      // var slideshowIndex= 0;
+      // showSlides(slideshowIndex);
 
-  //    $('#ss1').click(function() {
-  //     $("#ss1").fadeOut(600);
-  //     $("#ss2").fadeIn(600);
-  //     $('#ss2').addClass('slideshow-image--active');
-  //     $(this).removeClass('slideshow-image--active');
-  //    });
-  //    $('#ss2').click(function() {
-  //     $("#ss2").fadeOut(600);
-  //     $("#ss3").fadeIn(600);
-  //     $('#ss3').addClass('slideshow-image--active');
-  //     $(this).removeClass('slideshow-image--active');
-  //    });
-  //    $('#ss3').click(function() {
-  //     $("#ss3").fadeOut(600);
-  //     $("#ss1").fadeIn(600);
-  //     $('#ss1').addClass('slideshow-image--active');
-  //     $(this).removeClass('slideshow-image--active');
-  //    });
-  //    $('.slideshow-image--active').onclick(function (e) {
-  //   setTimeout(function () {
-  //     $('#repair-drop').removeClass('visible').addClass('hidden');
-  //   }, 600);
-  // });
+      $(".slideshow" ).click(function(){
+        if(slideshowIndex < slideshow.length){
+          $(".slideshow").append("<div class=''>" + slideshow[slideshowIndex] + "</div>");
+          slideshowIndex++
+       }
+     });
+
+     $('#ss1').click(function() {
+      $("#ss1").fadeOut(600);
+      $("#ss2").fadeIn(600);
+      $('#ss2').addClass('slideshow-image--active');
+      $(this).removeClass('slideshow-image--active');
+     });
+     $('#ss2').click(function() {
+      $("#ss2").fadeOut(600);
+      $("#ss3").fadeIn(600);
+      $('#ss3').addClass('slideshow-image--active');
+      $(this).removeClass('slideshow-image--active');
+     });
+     $('#ss3').click(function() {
+      $("#ss3").fadeOut(600);
+      $("#ss1").fadeIn(600);
+      $('#ss1').addClass('slideshow-image--active');
+      $(this).removeClass('slideshow-image--active');
+     });
+     $('.slideshow-image--active').onclick(function (e) {
+    setTimeout(function () {
+      $('#repair-drop').removeClass('visible').addClass('hidden');
+    }, 600);
+  });
+});
   // ref http://jsfiddle.net/jzoe0q15/1/
 
-  setInterval(function() {
-    $('.slideshow > div:first')
-      .fadeOut(1000)
-      .next().addClass('slideshow-image--active')
-      .fadeIn(1000)
-      .end()
-      .appendTo('.slideshow');
-  },  3500);
-      });
+  // setInterval(function() {
+  //   $('.slideshow > div:first')
+  //     .fadeOut(1000)
+  //     .next().addClass('slideshow-image--active')
+  //     .fadeIn(1000)
+  //     .end()
+  //     .appendTo('.slideshow');
+  // },  3500);
+  //     });
 //
 //     var slideIndex = 1;
 // showSlides(slideIndex);

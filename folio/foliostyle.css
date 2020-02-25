@@ -7,6 +7,7 @@ body {
   overflow: hidden;
 }
 
+
 .flex-parent {
   display: flex;
   justify-content: space-between;
@@ -42,19 +43,19 @@ body {
 }
 
 .description-text {
-  font-size: .75em;
+  font-size: .70em;
 }
 
-#proj2:hover #new {
+/* .proj2:hover #new {
 content: 'triumphant/broken';
 /* transition: .2s ease-in-out; */
 
 /* ref http://jsfiddle.net/fLMSd/14/ */
 }
 
-#proj2:hover #new:after{
+/* .proj2:hover #new:after{
 content: 'triumphant/broken';
-transition: .2s ease-in-out;
+transition: .2s ease-in-out; */
 
 /* ref http://jsfiddle.net/fLMSd/14/ */
 }
@@ -99,15 +100,17 @@ transition: .2s ease-in-out;
 
 .galeria {
   padding: 50px;
-  width: calc(100% - 8px);
+  width: calc(95% - 8px);
   height: calc(70% - 8px);
+  justify-content: flex-end;
 }
 
 .galeria-illust {
   padding: 50px;
-  width: calc(60% - 8px);
+  width: calc(65% - 8px);
   height: calc(70% - 8px);
   left: 0px;
+  justify-content: flex-end;
 }
 
 /* .slideshow {
@@ -226,6 +229,13 @@ transition: .2s ease-in-out;
   /* position: absolute; */
 }
 
+#ss4 video {
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  animation-name: fade;
+  /* position: absolute; */
+}
+
 #ss5 img {
   width: calc(100% - 8px);
   height: calc(100% - 8px);
@@ -268,81 +278,352 @@ transition: .2s ease-in-out;
   /* position: absolute; */
 }
 
+#ss11 img {
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  animation-name: fade;
+  /* position: absolute; */
+}
+
+#ss12 img {
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  animation-name: fade;
+  /* position: absolute; */
+}
+
+#ss13 img {
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  animation-name: fade;
+  /* position: absolute; */
+}
+
+#ss14 img {
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  animation-name: fade;
+  /* position: absolute; */
+}
+
+#ss15 img {
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  animation-name: fade;
+  /* position: absolute; */
+}
+
+#ss16 img {
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  animation-name: fade;
+  /* position: absolute; */
+}
+
+#ss17 img {
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  animation-name: fade;
+  /* position: absolute; */
+}
+
 #bar1 {
-  margin-left: calc(64% - 8px);
+  /* margin-left: calc(64% - 8px); */
+  right: 0;
   width: 300px;
   height: 45px;
   background-color: white;
 }
 
 #bar2 {
-  margin-left: calc(46% - 8px);
-  width: 450px;
+  display: block;
+  right: 0px;
+  margin-left: 25%;
+  width: 640px;
   height: 48px;
+  color: black;
+  /* align-self: center; */
   background-color: black;
 }
 
+#bar2:hover {
+  /* right:445px; */
+  margin-left: 10%;
+  width: 950px;
+  color: white;
+  padding-left: 40px;
+  transition: .5s ease-in-out;
+  /* background: red; */
+}
+
+
 #bar3 {
-  margin-left: calc(28% - 8px);
-  width: 600px;
+  display: block;
+  right: 0px;
+  margin-left: 25%;
+  width: 640px;
   height: 48px;
+  color: black;
   background-color: black;
+}
+
+#bar3:hover{
+  /* right:445px; */
+  margin-left: 10%;
+  width: 950px;
+  color: white;
+  padding-left: 40px;
+  transition: .5s ease-in-out;
+  /* background: red; */
 }
 
 #bar4 {
-  margin-left: calc(84% - 8px);
-  width: 134px;
+  display: block;
+  right: 0px;
+  margin-left: 25%;
+  width: 640px;
   height: 48px;
+  color: black;
   background-color: black;
+}
+
+#bar4:hover {
+  /* right:445px; */
+  margin-left: 10%;
+  width: 950px;
+  color: white;
+  padding-left: 40px;
+  transition: .5s ease-in-out;
+  /* background: red; */
 }
 
 #bar5 {
-  margin-left: calc(64% - 8px);
-  width: 301px;
+  display: block;
+  right: 0px;
+  margin-left: 25%;
+  width: 640px;
   height: 48px;
+  color: black;
   background-color: black;
+}
+
+#bar5:hover {
+  /* right:445px; */
+  margin-left: 10%;
+  width: 950px;
+  color: white;
+  padding-left: 40px;
+  transition: .5s ease-in-out;
+  /* background: red; */
 }
 
 #bar6 {
-  margin-left: calc(72% - 8px);
-  width: 234px;
+  display: block;
+  right: 0px;
+  margin-left: 25%;
+  width: 640px;
   height: 48px;
+  color: black;
   background-color: black;
+}
+
+#bar6:hover {
+  /* right:445px; */
+  margin-left: 10%;
+  width: 950px;
+  color: white;
+  padding-left: 40px;
+  transition: .5s ease-in-out;
+  /* background: red; */
 }
 
 #bar7 {
-  margin-left: calc(40% - 8px);
-  width: 520px;
+  display: block;
+  right: 0px;
+  margin-left: 25%;
+  width: 640px;
   height: 48px;
+  color: black;
   background-color: black;
 }
 
+#bar7:hover {
+  /* right:445px; */
+  margin-left: 10%;
+  width: 950px;
+  color: white;
+  padding-left: 40px;
+  transition: .5s ease-in-out;
+  /* background: red; */
+}
+
 #bar7-illust {
-  margin-left: calc(61% - 8px);
+  display: block;
+  right: 0px;
+  /* margin-left: calc(61% - 8px); */
   width: 520px;
   height: 48px;
   background-color: black;
 }
 
 #bar8 {
-  margin-left: calc(55% - 8px);
-  width: 500px;
+  display: block;
+  right: 0px;
+  margin-left: 25%;
+  width: 640px;
   height: 48px;
+  color: black;
   background-color: black;
+}
+
+#bar8:hover {
+  /* right:445px; */
+  margin-left: 10%;
+  width: 950px;
+  color: white;
+  padding-left: 40px;
+  transition: .5s ease-in-out;
+  /* background: red; */
 }
 
 #bar9 {
-  margin-left: calc(64% - 8px);
-  width: 350px;
+  display: block;
+  right: 0px;
+  margin-left: 25%;
+  width: 640px;
   height: 48px;
+  color: black;
   background-color: black;
 }
 
+#bar9:hover {
+  /* right:445px; */
+  margin-left: 10%;
+  width: 950px;
+  color: white;
+  padding-left: 40px;
+  transition: .5s ease-in-out;
+  /* background: red; */
+}
+
 #bar10 {
-  margin-left: calc(25% - 8px);
+  display: block;
+  right: 0px;
+  margin-left: 25%;
   width: 640px;
   height: 48px;
+  color: black;
   background-color: black;
+}
+
+#bar10:hover {
+  /* right:445px; */
+  margin-left: 10%;
+  width: 950px;
+  color: white;
+  padding-left: 40px;
+  transition: .5s ease-in-out;
+  /* background: red; */
+}
+
+#bar11 {
+  display: block;
+  right: 0px;
+  margin-left: 25%;
+  width: 640px;
+  height: 48px;
+  color: black;
+  background-color: black;
+}
+
+#bar11:hover {
+  /* right:445px; */
+  margin-left: 10%;
+  width: 950px;
+  color: white;
+  padding-left: 40px;
+  transition: .5s ease-in-out;
+  /* background: red; */
+}
+
+#bar12 {
+  display: block;
+  right: 0px;
+  margin-left: 25%;
+  width: 640px;
+  height: 48px;
+  color: black;
+  background-color: black;
+}
+
+#bar12:hover {
+  /* right:445px; */
+  margin-left: 10%;
+  width: 950px;
+  color: white;
+  padding-left: 40px;
+  transition: .5s ease-in-out;
+  /* background: red; */
+}
+
+#bar13 {
+  display: block;
+  right: 0px;
+  margin-left: 25%;
+  width: 640px;
+  height: 48px;
+  color: black;
+  background-color: black;
+}
+
+#bar13:hover {
+  /* right:445px; */
+  margin-left: 10%;
+  width: 950px;
+  color: white;
+  padding-left: 40px;
+  transition: .5s ease-in-out;
+  /* background: red; */
+}
+
+#bar14 {
+  display: block;
+  right: 0px;
+  margin-left: 25%;
+  width: 640px;
+  height: 48px;
+  color: black;
+  background-color: black;
+}
+
+#bar14:hover {
+  /* right:445px; */
+  margin-left: 10%;
+  width: 950px;
+  color: white;
+  padding-left: 40px;
+  transition: .5s ease-in-out;
+  /* background: red; */
+}
+
+#bar15 {
+  display: block;
+  right: 0px;
+  margin-left: 25%;
+  width: 640px;
+  height: 48px;
+  color: black;
+  background-color: black;
+}
+
+#bar15:hover {
+  /* right:445px; */
+  margin-left: 10%;
+  width: 950px;
+  color: white;
+  padding-left: 40px;
+  transition: .5s ease-in-out;
+  /* background: red; */
 }
 
 .column--3 {
